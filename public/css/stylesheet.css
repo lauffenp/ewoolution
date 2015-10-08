@@ -1,0 +1,269 @@
+.noscroll {
+    overflow-y:hidden;
+};
+
+#first_back{
+/*     background-image:url("../img/laura ewool-2.jpg");*/
+      background-size:cover;
+    z-index:2.5;
+}
+
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+/*    overflow-y: auto;*/
+    -webkit-perspective: 300px;
+    perspective: 300px;
+      perspective-origin-x:100%; 
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      transform-origin-x: 100%;
+      background-size:cover;
+  }
+
+  .parallax__layer--fore {
+     
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+#secondbase {
+ background-color:rgba(0,0,0,0.7);   
+}
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+  #parallax__layer--base--1 {
+              background-
+    background-size:cover;
+      background-position: 50% 50%;  
+
+  }
+.parallax__layer--back {
+   -webkit-transform: translateZ(-200px) scale(2);
+    transform: translateZ(-200px) scale(2);
+    z-index: 3;   
+}
+
+
+
+#parallax__layer--back_2 {
+      background-repeat:no-repeat;
+    
+      background-size:cover;
+      background-position: 0px 0px;
+      height:100%;
+  
+  }
+  #parallax__layer--back_1 {
+      
+     background-image:url("../img/1381250_655258094509044_44267356_n-2.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+      overflow:visible;
+      background-position: 0px 0px;
+      height:100%;
+      
+  }
+
+  .parallax__layer--deep {
+     background-image:url("../img/IMG_8442_final.jpg");
+      background-size: cover;
+    height:100%;
+        background-position: 50% 50%;
+    -webkit-transform: translateZ(-400px) scale(3);
+    transform: translateZ(-400px) scale(3);
+    z-index: 4;
+      width:auto;
+     
+  }
+
+/* Debugger styles - used to show the effect
+  --------------------------------------------- */
+
+  .debug {
+    position: fixed;
+    top: 0;
+    left: .5em;
+    z-index: 999;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    padding: .5em;
+    border-radius: 0 0 5px 5px;
+  }
+  .debug-on .parallax__group {
+    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+ }
+  .debug-on .parallax__layer {
+    box-shadow: 0 0 0 2px #000;
+    opacity: 0.9;
+  }
+  .parallax__group {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+
+ 
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  body, html {
+    overflow: hidden;
+      background-color: rgba(0,0,0,1);
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+      color:rgba(0,0,0,0); /* makes text invisyy*/
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+      color:black;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+img {
+    width:100%;
+    height:100%;
+}
+
+  /* style the groups
+  --------------------------------------------- */
+
+  #group1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  #group1 .parallax__layer--base {
+      height:60%;
+      background-position: top center;
+   background: rgba(152,152,152,1);
+  }
+
+  #group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+  #group2 .parallax__layer--back {
+/*    background: rgb(123,210,102);*/
+  }
+ #group2 .parallax__layer--base {
+    
+  }
+
+.ninetyheight {
+        background: rgba(152,152,152,0.9);
+    background-attachment: fixed;
+    height: 60%;
+    background-position: bottom center;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+
+  #group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  #group3 .parallax__layer--base {
+background: rgba(152,152,152,0.9);
+  }
+
+  #group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #group4 .parallax__layer--base {
+      height:150%;
+      background-position: top center;
+background: rgba(152,152,152,0.9);
+  }
+#group4 .parallax__layer--back{
+            background-image:url("../img/willy.jpg");   
+    }
+
+  #group5 {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+    
+  #group5 .parallax__layer--base {
+/*        background-image:url("../img/pink_grad_rev_slant.png");   */
+  }
+
+  #group6 {
+    z-index: 2; /* slide under group 5 and 7 */
+  }
+
+  #group6 .parallax__layer--back {
+/*      background-image:url("../img/laura%20ewool-2.jpg")*/
+  }
+
+  #group7 {
+    z-index: 3; /* slide over group 7 */
+  }
+  #group7 .parallax__layer--base {
+/*    background-image:url("../img/hatstack.jpg");*/
+/*        background-size:cover;*/
+  };
+
+/*-------------- Custom */
+
+
+.img_holder{
+ position:relative;
+display:block;
+height:auto;
+}
+
+#hat_holder {
+ display:block;
+    top:50%;
+    left:50%;
+    width:660px;
+   
+}
+
+.hat {
+    display:inline-block;
+    height:100px;
+    width:100px;
+    position:relative;
+    float:left;
+    margin: 5px;
+}
+h1{
+ background: -webkit-linear-gradient(red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+}

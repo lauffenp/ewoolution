@@ -1,0 +1,21 @@
+{
+  "name": "csspara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+    "dependencies" : { 
+    "body-parser": "^1.6.5",
+    "ejs": "^1.0.0",
+    "express": "^4.8.5",
+    "morgan": "^1.0.0",
+    "serve-favicon": "^2.3.0"
+    },
+    "engines": {
+    "node": "0.10.x"
+  }
+}
